@@ -497,14 +497,6 @@
         <groupId>org.uniapr</groupId>
         <artifactId>uniapr-plugin</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <configuration>
-          <timeoutCoefficient>10.0</timeoutCoefficient>
-          <timeoutBias>9000</timeoutBias>
-          <whiteListPrefix>org.apache.commons.lang3</whiteListPrefix>
-          <failingTests>
-            <failingTest>org.apache.commons.lang3.StringUtilsTest:testEscapeSurrogatePairs</failingTest>
-          </failingTests>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

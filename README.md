@@ -12,7 +12,7 @@ UniAPR is an efficient patch validation framework. Upon this framework, differen
 
 This repository contains executables for UniAPR together with a couple of examples so that the reviewers of our paper can try the system on a number of real-world projects.
 
-## UniPR Setup
+## UniAPR Setup
 Please follow these steps to setup UniAPR:
 
 :one:: Before checking out and installing the program, please make sure you have all the [required software](#system-requirements) installed on your computer. In order to checkout the project, the user can invoke the following command in a Terminal window.
@@ -41,7 +41,7 @@ Having installed UniAPR on the local repository, the users can invoke the plugin
 All the user needs to do it to add this XML snippet in the `<plugins>` section under the `<build>` tag in the POM file of the target prpject. After adding this, UniAPR can be invoked simply by running the following command.
 
 ```shell script
-mvn org.uniapr:uniapr-plugin:valdiate
+mvn org.uniapr:uniapr-plugin:validate
 ```
 
 By default, UniAPR expects a directory names `patches-pool` under the base directory of the target project. This directory is expected to contain a sub-directory for each patch in side each of which the class file(s) for the corresponding patch should reside. If everything goes well, the user will see a `BUILD SUCCESS` message on their screen. Above this message, UniAPR will print a brief summary of its output, e.g., the time taken to validate patches and the number of plausible patches found. The id of the plausible patch(es) shall also printed as they are discovered. Therefore, the user might want to log the standard output for examination.
